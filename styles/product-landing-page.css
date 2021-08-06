@@ -1,0 +1,318 @@
+/*==================
+Table of Contents
+====================
+
+1.Custom variables
+2.Base reset
+3.Global Elements
+4.Typography
+5.Layout
+  5.1.Navbar
+  5.2.Email-section
+  5.3.Features & Video -section
+  5.4.Products -section
+  5.5.Footer
+6.Components
+  6.1.Buttons
+7.Media Queries
+
+*/
+
+/* =======================
+  1.Custom variables  
+========================*/
+
+/* Custom colours */
+
+:root {
+  --mustard: (#c1bc83);
+  --blue: rgb(233, 243, 242);
+  background-image: linear-gradient(135deg, whitesmoke, #e9d6cc);
+
+  --wine: rgb(99, 50, 57);
+  --lavender: rgb(212, 195, 195);
+  --ochre: rgb(162, 116, 47);
+  --camel: rgb(215, 182, 152);
+  --green: rgb(202, 199, 180);
+  --orange: rgb(205, 120, 90);
+  --frenchgray: rgb(237, 234, 227);
+  --purple: rgb(229, 222, 231);
+  --white: rgb(248, 247, 246);
+}
+
+/* =======================
+    2.Base reset - Foundation  
+  ========================*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* =======================
+       3.Global Elements
+  ========================*/
+
+body {
+  font-family: "EB Garamond", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #837a7a;
+  background: rgb(237, 234, 227);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--ochre);
+}
+
+/* =======================
+          4.Typography  
+  ========================*/
+.container {
+  font-size: 1.3rem;
+  letter-spacing: 0.1.5em;
+}
+
+.container .beau {
+  letter-spacing: 0.3em;
+}
+
+#title {
+  font-size: 5rem;
+}
+
+/* =======================
+           5.Layout  
+  ========================*/
+
+/* ------ 5.1.Navbar ------ */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  background-color:white;
+  /*   justify-content:space-between; */
+  align-items: center;
+  /*   padding:0 1em; */
+}
+.nav-link {
+  /*   width:100%; */
+  padding: 0.9em 0.7em;
+}
+
+.currentpage {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background: var(--green);
+}
+
+/* .currentpage {
+  background: rgb(237, 234, 227);
+} */
+
+.img {
+  max-height: 60px;
+}
+
+/* ------ 5.2.Email-section ------ */
+
+form {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  margin: 0.5em auto;
+  width: 20%;
+  min-width: 16rem;
+}
+
+#title {
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+
+#title,
+#subscribe {
+  text-align: center;
+}
+
+::placeholder {
+  color: rgb(212, 195, 195);
+  text-align: center;
+}
+
+#email {
+  border-radius: 4px;
+}
+
+/* ------ 5.3.Features & Video -section ------ */
+
+#video-features {
+  justify-content: center;
+  display: flex;
+  padding: 3em;
+}
+
+#inspiration {
+  margin-left: 2em;
+  align-self: center;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 0;
+}
+
+/* ------ 5.4.Products -section ------ */
+
+#catalogue {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 2em;
+  display: flex;
+  justify-content: center;
+  /*   flex-wrap:wrap; */
+}
+
+.product + .product {
+  margin-left: 2em;
+}
+
+.product {
+  min-width: 200px;
+  width: 20%;
+  border-radius: 25px;
+  box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 3%), 0 6.7px 5.3px rgb(0 0 0 / 5%),
+    0 12.5px 10px rgb(0 0 0 / 6%), 0 100px 80px rgb(0 0 0 / 12%);
+  background-color: whitesmoke;
+  padding: 2em;
+  text-align: center;
+  margin: 2em 0;
+}
+
+/* ------ 5.5.Footer ------ */
+footer {
+  background-color: var(--green);
+  display: flex;
+  padding: 1em;
+  align-items: center;
+}
+span {
+  margin-left: auto;
+  /*   margin-right:2em; */
+}
+
+ul {
+  display: flex;
+  flex-direction: row-reverse;
+  /*   justify-content:flex-start; */
+}
+
+li {
+  margin: 0 2em;
+}
+
+ul .contact {
+  margin-right: 3em;
+}
+
+/* =======================
+          6.Components  
+  ========================*/
+
+/* ------ 6.1.Buttons ------ */
+.btn {
+  padding: 0 1em;
+  height: 30px;
+  font-family: "georgia";
+  font-size: 1em;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 2px white solid;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+  background-image: linear-gradient(
+    90deg,
+    rgba(196, 207, 187, 1) 17%,
+    rgba(161, 181, 216, 1) 50%,
+    rgba(115, 130, 144, 1) 96%
+  );
+}
+
+/* =======================
+    7.Media Queries  
+  ========================*/
+@media only screen and (max-width: 740px) {
+  .product {
+    margin: 0 -3em;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #title {
+    font-size: 4rem;
+  }
+  .product + .product {
+    margin: 3em;
+  }
+
+  .product {
+    margin: 3em;
+  }
+
+  #video-features {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #inspiration {
+    margin: 0;
+    margin-top: 2em;
+  }
+
+  #catalogue {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .container {
+    flex-direction: column;
+    /*     position:relative; */
+  }
+
+  a {
+    width: 100%;
+    text-align: center;
+  }
+
+  #title {
+    padding-top: 5em;
+  }
+}

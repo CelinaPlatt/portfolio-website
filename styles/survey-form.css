@@ -1,0 +1,217 @@
+/* Setup color variables */
+:root {
+  --purple: #b3a0a1;
+  --lgreen: #daf7a6;
+  --green: #82b86a;
+  --orange: #b27335;
+  --cream: #f4f3ef;
+  --brown: #967972;
+}
+
+/* Inherit Box Sizing*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* Reset */
+body {
+  margin: 0;
+}
+
+/*--------------------
+       Typography 
+  --------------------*/
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #967972;
+  /*   margin-left: 1rem; */
+}
+
+header {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  font-size: 1rem;
+  /*   margin-top:5em; */
+  padding: 1em 0;
+}
+
+.label,
+legend {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+::placeholder,
+.form-control {
+  color: white;
+  font-family: ;
+}
+
+textarea {
+  color: white;
+}
+
+.clue {
+  font-size: 0.5em;
+}
+
+#submit {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/*--------------------
+         Layout
+  --------------------*/
+.foliageabsolute {
+  /*  position:fixed; */
+  position: absolute;
+  width: 55%;
+  max-width: 850px;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.foliage {
+  transform: rotateY(180deg);
+  width: 45%;
+  max-width: 400px;
+  min-width: 450px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+body {
+  background: rgb(227, 236, 215);
+}
+
+h1 {
+  margin-top: 40vh;
+}
+
+.form-group {
+  line-height: 2em;
+  margin-top: 1em;
+}
+
+.form-control,
+optgroup,
+textarea {
+  border: 0.2em solid rgb(204, 196, 81);
+  border-radius: 25px;
+  background-color: #967972;
+  min-width: 200px;
+}
+
+textarea {
+  padding: 2em;
+  margin-top: 1.5em;
+  width: 90%;
+}
+
+.form-control:focus,
+optgroup:focus,
+textarea:focus {
+  border-color: pink;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--lgreen);
+  border-radius: 25px;
+}
+
+/*--------------------
+       Components
+  --------------------*/
+
+/* Style Radio Buttons 1.Add class to every radiobutton 2."appearance:none;" */
+
+.radiobtn {
+  /*↓↓↓↓↓↓ whipe browser's radio button styles ↓↓↓↓↓↓*/
+  appearance: none;
+  /*↓↓↓↓↓↓personalised styles↓↓↓↓↓↓*/
+  background-color: #967972;
+  border: 0.15em solid rgb(204, 196, 81);
+  box-shadow: 0 1px 2px #8c7273,
+    /* ↓↓↓↓↓↓ shadow inside the borde ↓↓↓↓↓*/ inset 0px -15px 10px -12px
+      rgb(181, 152, 145);
+  /*↓↓↓↓↓↓ size of button ↓↓↓↓↓↓*/
+  padding: 9px;
+  border-radius: 25px;
+  display: inline;
+  /*    vertical-align: middle; */
+}
+
+.checkbox {
+  appearance: none;
+  background-color: #967972;
+  border: 0.15em solid rgb(204, 196, 81);
+  box-shadow: 0 1px 2px #8c7273, inset 0px -15px 10px -12px rgb(181, 152, 145);
+  padding: 9px;
+  border-radius: 25px;
+  display: inline;
+}
+
+input:checked {
+  background: linear-gradient(
+    90deg,
+    rgba(196, 207, 187, 1) 1%,
+    rgba(233, 204, 162, 1) 100%
+  );
+
+  box-shadow: 0 1px 2px #967972, inset 0px -30px 10px -16px #f0c990;
+}
+
+#main {
+  width: 95%;
+  margin: 16rem auto 0 auto;
+}
+
+#submit {
+  padding: 0.1em 3em;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(203, 151, 82, 1) 0%,
+    rgba(196, 207, 187, 1) 31%,
+    rgba(221, 197, 197, 1) 65%,
+    rgba(233, 204, 162, 1) 100%
+  );
+  border: 1em #6e544e;
+  color: #6e544e;
+  box-shadow: 0 3px 2px #8c7273;
+}
+.submit {
+  text-align: center;
+}
+
+/*--------------------
+       Media queries
+  --------------------*/
+
+@media (min-width: 576px) {
+  #main {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  #main {
+    max-width: 720px;
+  }
+}

@@ -9,7 +9,7 @@ body {
 }
 
 .slider {
-    width: 400px;
+    width: 60%;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
@@ -22,7 +22,7 @@ body {
 }
 
 .slides input{
-    /* display: none; */
+    display: none;
 }
 
 .slide{
