@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/survey-form.css">
+</head>
+<body>
+    <!-- Font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Image -->
+<img class="foliageabsolute" src="images/survey-form/header-img.png">
+<div id="main">
+
+  <img class="foliage" src="images/survey-form/header-img.png">
+<div id="main">
+
+  <div id="main">
+    <header class="header">
+      <h1 id="title" class="text-center">Survey Form</h1>
+      <p id="description">Hi there!<br>Thank you <br> for taking the time <br>to help us improve</p>
+    </header>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label class="label" for="name" id="name-label">Name</label><br>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required>
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="email" id="email-label">Email</label><br>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address" required </input>
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="number" id="number-label">Age <span class="clue">(optional)</span></label><br>
+        <input type="number" name="age" id="number" class="form-control" placeholder="Enter your age" min="10" max="99" class="form-control" optional </input>
+      </div>
+
+      <div class="form-group">
+        <label class="label" for="dropdown">Country</label><br>
+        <select class="form-control" id="dropdown">
+          <optgroup label="country">
+            <option disabled selected value>Select country of residence</option>
+            <option value="France">France</option>
+            <option value="Mexico">Mexico</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option><br>
+            </optiongroup>
+        </select>
+      </div>
+
+      <div class="form-group" id="size-top">
+        <legend>Size Top</legend><br>
+        <input type="radio" id="xs" name="size-top" value="xs" checked class="radiobtn">
+        <label for="xs">XS</label><br>
+        <input type="radio" id="s" name="size-top" value="s" class="radiobtn">
+        <label for="s">S</label><br>
+        <input type="radio" id="m" name="size-top" value="m" class="radiobtn">
+        <label for="m">M</label><br>
+        <input type="radio" id="l" name="size-top" value="l" class="radiobtn">
+        <label for="l">L</label><br>
+        <input type="radio" id="xl" name="size-top" value="xl" class="radiobtn">
+        <label for="xl">XL</label><br>
+      </div>
+
+      <div class="form-group" id="size-botton">
+        <legend>Size Bottom</legend><br>
+        <input type="radio" id="xs" name="size-bottom" value="xs" checked class="radiobtn">
+        <label for="xs">XS</label><br>
+        <input type="radio" id="s" name="size-bottom" value="s" class="radiobtn">
+        <label for="s">S</label><br>
+        <input type="radio" id="m" name="size-bottom" value="m" class="radiobtn">
+        <label for="m">M</label><br>
+        <input type="radio" id="l" name="size-bottom" value="l" class="radiobtn">
+        <label for="l">L</label><br>
+        <input type="radio" id="xl" name="size-bottom" value="xl" class="radiobtn">
+        <label for="xl">XL</label><br>
+      </div>
+      <div class="form-group" id="shop-mostly">
+        <legend>I like to shop mostly for...</legend><br>
+        <input type="checkbox" id="dresses" name="shop-mostly-for" value="Dresses" class="checkbox">Dresses<br>
+        <input type="checkbox" id="skirts" name="shop-mostly-for" value="Skirts" class="checkbox">Skirts<br>
+        <input type="checkbox" id="tops" name="shop-mostly-for" value="Tops" class="checkbox">Tops<br>
+        <input type="checkbox" id="trousers" name="shop-mostly-for" value="Trousers" class="checkbox">Trousers<br>
+        <input type="checkbox" id="trousers" name="shop-mostly-for" value="Jumpers" class="checkbox">Jumpers<br>
+        <input type="checkbox" id="coats" name="shop-mostly-for" value="Coats" class="checkbox">Coats<br>
+        <input type="checkbox" id="lingerie" name="shop-mostly-for" value="lingerie" class="checkbox">Lingerie<br>
+        <input type="checkbox" id="jewellery" name="shop-mostly-for" value="Jewellery" class="checkbox">Jewellery<br>
+        <input type="checkbox" id="stationary" name="shop-mostly-for" value="Stationary" class="checkbox">Stationary<br>
+        <input type="checkbox" id="home-accessories" name="shop-mostly-for" value="Home-accessories" class="checkbox">Home Accessories<br>
+      </div>
+      <div class="form-group" id="comment">
+        <label class="label" for="comment" id="comment">We want to hear from you.</label><br>
+        <textarea id="comment" style="max-width:100%;" rows="6" cols="70" placeholder="Leave us any comments, suggestions or questions and we will get in contact.">
+</textarea>
+      </div>
+      <div class="form-group submit">
+        <input id="submit" type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</div>
+    
+</body>
+</html>
