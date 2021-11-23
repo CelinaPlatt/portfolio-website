@@ -172,6 +172,7 @@ nav {
 
 /* ------ 5.2.Projects-section ------ */
 
+
 #projects {
   background-color: var(--green);
   color: var(--ochre);
@@ -274,6 +275,7 @@ img {
 }
 
 .contact-details {
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
@@ -316,6 +318,11 @@ img {
     padding: 0 30px;
     height: 100vh;
   }
+  .project-section-header{
+    padding: 0 15px;
+    font-size: 28px;
+  }
+  
 }
 
 @media (min-width: 512px) {
