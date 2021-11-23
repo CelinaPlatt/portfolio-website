@@ -105,23 +105,21 @@ h2 {
   font-size: 2rem;
 }
 
-
 .subtitle {
   font-family: 'Playfair Display SC', serif;
   text-align: center;
   font-style: italic;
 }
 
-.about-me { 
+.about-me {
   font-family: 'Playfair Display SC', serif;
-  margin:60px auto;
+  margin: 60px auto;
   width: 50vw;
   font-size: 1 em;
   line-height: 1.6;
-  font-weight:700;
+  font-weight: 700;
   padding: 20px;
   text-align: center;
- 
 }
 
 footer a {
@@ -161,7 +159,7 @@ nav {
 
 #welcome-section {
   background-color: var(--lavender);
-  padding: 9rem;
+  padding: 9rem 30px;
   height: 70vh;
   background: linear-gradient(
     90deg,
@@ -194,7 +192,6 @@ nav {
   /*   width: 100%; */
   max-width: 1280px;
   margin: 0 auto;
-
 }
 
 /* ------ 5.3.Contact-section ------ */
@@ -316,9 +313,8 @@ img {
     flex-direction: column;
   }
   #welcome-section {
- 
+    padding: 0 30px;
     height: 100vh;
-  
   }
 }
 
