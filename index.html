@@ -28,8 +28,8 @@
       <nav id="navbar" class="nav">
         <ul class="nav-list">
           <li id="celina">Celina Alvarez</li>
-          <li><a href="#welcome-section">ABOUT</a></li>
-          <li><a href="#projects">WORK</a></li>
+          <!-- <li><a href="#welcome-section">ABOUT</a></li> -->
+          <li><a href="#projects">PROJECTS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
@@ -37,7 +37,15 @@
       <!-- Welcome Section -->
       <section id="welcome-section" class="welcome-section">
         <h1>Hey up! I'm Celina</h1>
-        <p class="ph1">a software developer</p>
+        <p class='subtitle'>a software developer</p>
+
+        <section class="about-me">
+          <p>
+          Using the power of programming languages to
+           <em> bring projects to life</em>
+          </p>
+
+        </section>
       </section>
 
       <!-- Projects Section -->
@@ -47,94 +55,86 @@
         </h2>
         <!-- Projects Gallery -->
         <div class="projects-grid">
-          <!-- PROJECT 1 : Tribute Page -->
+          <!-- PROJECT 1 : Amplify mobile app-->
           <a
             class="project-tile"
             target="blank"
-            href="tribute-page.html"
+            href="https://github.com/CelinaPlatt/amplify"
           >
-            <img
+            <video
               class="project-image"
-              src="images/index/tribute-page-html.png"
-              alt="project"
-            />
-            <!-- <img
-              class="project-image"
-              src="https://images.pexels.com/photos/2543240/pexels-photo-2543240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="project"
-            /> -->
+              width="82%"
+              autoplay
+              loop="loop"
+              muted
+              defaultMuted
+            >
+              <source
+                src="./images/amplify-mobile-app/presentation video.webm"
+                type="video/mp4"
+              />
+
+              Your browser does not support the video tag.
+            </video>
+
             <p class="project-title">
               <span class="code">&lt;</span>
-              Tribute Page
+              Amplify
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
-          <!-- PROJECT 2 : Survey Form -->
+          <!-- PROJECT 2 : Game Critic Website -->
           <a
             class="project-tile"
             target="blank"
-            href="survey-form.html"
+            href="https://game-critic.netlify.app/"
           >
             <img
               class="project-image"
-              src="images//index/survey-form-html.png"
+              src="./images/game_critic_web/game-critic.netlify.app_deck-building_reviews(area).png"
               alt="project"
             />
-            <!-- <img
+
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Game Critic
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <!-- PROJECT 3 : Game Critic API -->
+          <a
+            class="project-tile"
+            target="blank"
+            href="https://game-critic.herokuapp.com/api"
+          >
+            <img
               class="project-image"
-              src="https://images.pexels.com/photos/7234157/pexels-photo-7234157.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              src="./images/game-critic-API/game-critic.herokuapp.com_api(area).png"
               alt="project"
-            /> -->
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>
+              Game Critic API
+              <span class="code">&#47;&gt;</span>
+            </p>
+          </a>
+          <!-- PROJECT 4 : Survey Form -->
+          <a class="project-tile" target="blank" href="./survey-form.html">
+            <img
+              class="project-image"
+              src="./images/survey-form/127.0.0.1_5500_survey-form.html(area).png"
+              alt="project"
+            />
             <p class="project-title">
               <span class="code">&lt;</span>
               Survey Form
               <span class="code">&#47;&gt;</span>
             </p>
           </a>
-          <!-- PROJECT 3 : Product Landing Page -->
-          <a
-            class="project-tile"
-            target="blank"
-            href="product-landing-page.html"
-          >
-            <img
-              class="project-image"
-              src="images/index/product-landing-page-html.png"
-              alt="project"
-            />
-            <!-- <img
-              class="project-image"
-              src="https://images.pexels.com/photos/2109760/pexels-photo-2109760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt="project"
-            /> -->
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Product Landing Page
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
-          <!-- PROJECT 4 : Image Slider -->
-          <a class="project-tile" target="blank" href="image-slider.html">
-            <img
-              class="project-image"
-              src="images/index/image-slider-html.png"
-              alt="project"
-            />
-            <!-- <img
-              class="project-image"
-              src="https://images.pexels.com/photos/6455888/pexels-photo-6455888.png?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="project"
-            /> -->
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Image Slider
-              <span class="code">&#47;&gt;</span>
-            </p>
-          </a>
         </div>
         <!-- Show All Button -->
         <a
-          href="https://codepen.io/your-work"
+          href="https://github.com/CelinaPlatt"
           class="btn btn-show-all"
           target="blank"
         >
@@ -150,33 +150,23 @@
         <div class="contact-details">
           <a
             id="profile-link"
-            href="https://github.com/CelinaPlatt/portfolio-website.git"
+            href="https://github.com/CelinaPlatt"
             target="_blank"
             class="btn-contact"
             ><i class="fab fa-github"></i> GitHub</a
           >
           <a
-            href="mailto:example@example.com"
+            href="mailto:alvarezdiaz.celina@gmail.com"
             class="btn-contact"
             target="_blank"
             ><i class="fas fa-at"></i> Send a mail</a
           >
-          <a href="tel:555-555-5555" class="btn-contact" target="_blank"
+          <a href="tel:+44 7307 001104" class="btn-contact" target="_blank"
             ><i class="fas fa-mobile-alt"></i> Call me</a
           >
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer>
-        <p>
-          This is my final project for the Responsive Web Design Certification
-          from
-          <a href="https://www.freecodecamp.org/learn" target="blank"
-            >freeCodeCamp</a
-          >
-        </p>
-      </footer>
     </div>
   </body>
 </html>

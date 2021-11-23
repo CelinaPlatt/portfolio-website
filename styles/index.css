@@ -59,7 +59,7 @@ html {
   ========================*/
 
 body {
-  font-family: "Yrsa", serif;
+  font-family: 'Yrsa', serif;
   font-size: 1rem; /* 18px */
   font-weight: 400;
   line-height: 1.4;
@@ -76,10 +76,10 @@ a {
   color: var(--ochre);
 }
 
-img {
+/* img {
   display: block;
   width: 100%;
-}
+} */
 
 footer {
   padding: 1em;
@@ -93,7 +93,7 @@ footer {
   ========================*/
 h1,
 h2 {
-  font-family: "Playfair Display SC", serif;
+  font-family: 'Playfair Display SC', serif;
   font-weight: 700;
   text-align: center;
 }
@@ -105,10 +105,23 @@ h2 {
   font-size: 2rem;
 }
 
-.welcome-section p {
-  font-family: "Playfair Display SC", serif;
+
+.subtitle {
+  font-family: 'Playfair Display SC', serif;
   text-align: center;
   font-style: italic;
+}
+
+.about-me { 
+  font-family: 'Playfair Display SC', serif;
+  margin:60px auto;
+  width: 50vw;
+  font-size: 1 em;
+  line-height: 1.6;
+  font-weight:700;
+  padding: 20px;
+  text-align: center;
+ 
 }
 
 footer a {
@@ -122,10 +135,7 @@ footer a {
 /* ------ 5.1.Navbar ------ */
 nav {
   z-index: 1;
-  position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
   background-color: var(--frenchgray);
 }
 
@@ -136,22 +146,23 @@ nav {
 }
 
 .nav-list li {
-  padding: 1.3rem;
+  padding: 15px;
 }
 
 .nav-list > #celina {
   text-align: center;
   flex: 2;
   margin-right: auto;
-  font-family: "Playfair Display SC", serif;
+  font-family: 'Playfair Display SC', serif;
   /*   background-color:var(--green); */
 
   /* ------ 5.2.Welcome-section ------ */
 }
+
 #welcome-section {
   background-color: var(--lavender);
   padding: 9rem;
-  height: 100vh;
+  height: 70vh;
   background: linear-gradient(
     90deg,
     rgba(203, 151, 82, 1) 0%,
@@ -183,6 +194,7 @@ nav {
   /*   width: 100%; */
   max-width: 1280px;
   margin: 0 auto;
+
 }
 
 /* ------ 5.3.Contact-section ------ */
@@ -206,7 +218,7 @@ nav {
 /* ------ 6.1.Project Images ------ */
 
 img {
-  height: calc(100% - 2rem);
+  /* height: calc(100% - 2rem); */
   width: 100%;
   object-fit: cover;
 }
@@ -214,7 +226,7 @@ img {
   position: relative;
   top: -3em;
   padding: 0.5em;
-  background-color: rgb(248, 247, 246, 0.8);
+  background-color: rgb(248, 247, 246);
   text-align: center;
 }
 
@@ -281,12 +293,43 @@ img {
 
 @media (max-width: 512px) {
   .nav-list {
+    top: 100;
+    width: 100vw;
     flex-direction: column;
     align-items: center;
   }
+
+  li {
+    margin: 0 auto;
+  }
+
   #welcome-section {
-    width: 100vh;
-    padding: 0px;
-    padding-top: 20rem;
+    padding: 40px 0 0 0;
+  }
+  #projects {
+    padding: 30px 0 30px 0;
+  }
+  .projects-grid {
+    width: 90vw;
+  }
+  .contact-details {
+    flex-direction: column;
+  }
+  #welcome-section {
+ 
+    height: 100vh;
+  
+  }
+}
+
+@media (min-width: 512px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-list li {
+    padding: 1.3rem;
   }
 }
